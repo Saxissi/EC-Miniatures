@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Warhammer model painting services. Bring your miniatures to life with custom paint jobs.">
+    <title>EC Miniatures</title>
+    <!-- Bootstrap 5 CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-4 shadow-sm">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1>Warhammer Masterpieces</h1>
+                <nav>
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li class="mx-3"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mx-3"><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></li>
+                        <li class="mx-3"><a href="#services" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mx-3"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex justify-content-center align-items-center text-center text-white py-5" style="background-image: url('warhammer-bg.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h2 class="display-3 fw-bold">Bringing Your Warhammer Models to Life</h2>
+            <p class="lead">Custom painting services for Warhammer miniatures. Expert detailing and craftsmanship.</p>
+            <a href="#services" class="btn btn-warning btn-lg">Get Your Custom Model</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container text-center">
+            <h2 class="display-4 mb-4">My Work</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="model1.jpg" class="card-img-top" alt="Space Marine">
+                        <div class="card-body">
+                            <p class="card-text">Space Marine Army</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="model2.jpg" class="card-img-top" alt="Orc Horde">
+                        <div class="card-body">
+                            <p class="card-text">Orc Horde Army</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="model3.jpg" class="card-img-top" alt="Chaos Warriors">
+                        <div class="card-body">
+                            <p class="card-text">Chaos Warriors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="display-4 mb-4">What I Offer</h2>
+            <p class="lead">Get your models professionally painted with attention to detail and quality. Here's what I can do for you:</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="painting-service1.jpg" class="card-img-top" alt="Custom Army Painting">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Army Painting</h5>
+                            <p class="card-text">Full army commissions with coordinated paint schemes and base designs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="painting-service2.jpg" class="card-img-top" alt="Model Conversion">
+                        <div class="card-body">
+                            <h5 class="card-title">Model Conversion</h5>
+                            <p class="card-text">Create unique models with conversions, kitbashing, and sculpting.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="painting-service3.jpg" class="card-img-top" alt="Detailing & Basing">
+                        <div class="card-body">
+                            <h5 class="card-title">Detailing & Basing</h5>
+                            <p class="card-text">Add fine details and custom basing to enhance your models.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="mailto:contact@warhammermasterpieces.com" class="btn btn-warning btn-lg">Request a Quote</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="display-4 mb-4">Contact Me</h2>
+            <p class="lead">Have a project in mind? Reach out and let’s make it happen!</p>
+            <form action="submit_form.php" method="POST" class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; EC Miniatures</p>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
